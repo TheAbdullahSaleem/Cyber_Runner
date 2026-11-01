@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bcht1covvdstc" path="res://Assets/crystal/kill_Gemini_Generated_Image_mig8h1mig8h1mig8.png" id="4_srufm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kf11u"]
-size = Vector3(1.4244804, 2.052719, 1.4427948)
+size = Vector3(1.0751143, 1.0217714, 1.1460991)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_abr8g"]
 resource_name = "Material.002"
@@ -62,7 +62,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.68859863, 0)
 script = ExtResource("1_kjvon")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1073083949]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7683716e-05, 0.9982071, -0.0096206665)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.1525574e-06, 0.46043682, 0.0141124725)
 shape = SubResource("BoxShape3D_kf11u")
 
 [node name="kill2" type="Node3D" parent="." unique_id=257520364]

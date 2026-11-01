@@ -1,9 +1,35 @@
 [gd_scene format=3 uid="uid://ba4mkhe2f7lma"]
 
 [ext_resource type="Script" uid="uid://bw8gr812ghuex" path="res://Scripts/ui.gd" id="1_jxero"]
+[ext_resource type="Texture2D" uid="uid://cypgupv507xgc" path="res://UI/UI ART/C.svg" id="2_nf4gj"]
+[ext_resource type="Texture2D" uid="uid://dt266yyp5uwt4" path="res://UI/UI ART/speed and dstance.svg" id="3_2246s"]
+
+[sub_resource type="FontVariation" id="FontVariation_8uh2d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nf4gj"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_bottom_right = 30
+corner_detail = 1
+shadow_color = Color(0, 0, 0, 1)
+anti_aliasing = false
+anti_aliasing_size = 0.01
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jxero"]
+load_path = "res://.godot/imported/press button.svg-c40fc878d7cb3d70493de4ed489b6292.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qdvrb"]
+load_path = "res://.godot/imported/press button haver.svg-a8ccef0b44ee40ba7da125180763f010.ctex"
 
 [node name="ui" type="CanvasLayer" unique_id=1095941771]
 script = ExtResource("1_jxero")
+metadata/_edit_vertical_guides_ = [1021.0]
 
 [node name="Control" type="Control" parent="." unique_id=996633787]
 layout_mode = 3
@@ -13,86 +39,121 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="Control" unique_id=390560164]
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=1240305807]
+layout_mode = 0
+offset_right = 191.66197
+offset_bottom = 81.0
+texture = ExtResource("2_nf4gj")
+
+[node name="Label" type="Label" parent="Control/TextureRect" unique_id=390560164]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0390625
-anchor_top = 0.047839507
-anchor_right = 0.0390625
-anchor_bottom = 0.07716049
-offset_right = 40.0
-offset_bottom = 23.0
-theme_override_font_sizes/font_size = 30
-horizontal_alignment = 1
+anchor_left = 0.09719926
+anchor_top = -0.1789933
+anchor_right = 0.42667764
+anchor_bottom = -0.019237518
+offset_left = 34.370598
+offset_top = 25.498457
+offset_right = 80.22212
+offset_bottom = 50.12654
+theme_override_fonts/font = SubResource("FontVariation_8uh2d")
+theme_override_font_sizes/font_size = 20
+text = " 00000"
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Label2" type="Label" parent="Control" unique_id=1360835449]
+[node name="TextureRect2" type="TextureRect" parent="Control" unique_id=1130885133]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.7517361
-anchor_top = 0.06481481
-anchor_right = 0.7517361
-anchor_bottom = 0.094135806
-offset_right = 40.0
-offset_bottom = 23.0
-theme_override_font_sizes/font_size = 30
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -344.0
+offset_bottom = 139.0
+grow_horizontal = 0
+texture = ExtResource("3_2246s")
+stretch_mode = 4
 
-[node name="Label3" type="Label" parent="Control" unique_id=991122975]
+[node name="Label2" type="Label" parent="Control/TextureRect2" unique_id=1360835449]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.32725695
-anchor_top = 0.074074075
-anchor_right = 0.32725695
-anchor_bottom = 0.10339506
-offset_right = 40.0
-offset_bottom = 23.0
-theme_override_font_sizes/font_size = 30
-horizontal_alignment = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -58.5
+offset_right = 81.0
+offset_bottom = -16.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = " 00000"
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="Control/TextureRect2" unique_id=991122975]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -14.5
+offset_right = 81.0
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = " 00000"
+vertical_alignment = 1
 
 [node name="Label4" type="Label" parent="Control" unique_id=1272786442]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.11805555
-anchor_top = -0.050925925
-anchor_right = -0.11805555
-anchor_bottom = -0.021604938
-offset_left = 455.0
-offset_top = 190.0
-offset_right = 495.0
-offset_bottom = 213.0
-theme_override_font_sizes/font_size = 30
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -268.0
+offset_top = 207.0
+offset_right = -5.0
+offset_bottom = 259.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_nf4gj")
+text = "you are bad at games"
 horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="Label5" type="Label" parent="Control" unique_id=880836613]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.11805555
-anchor_top = -0.14351852
-anchor_right = -0.11805555
-anchor_bottom = -0.11419753
-offset_left = 455.0
-offset_top = 190.0
-offset_right = 495.0
-offset_bottom = 213.0
-theme_override_font_sizes/font_size = 30
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -268.0
+offset_top = 266.0
+offset_right = -5.0
+offset_bottom = 318.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_nf4gj")
+text = "you are bad at games"
 horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
-[node name="Button" type="Button" parent="Control" unique_id=632152463]
+[node name="TextureButton" type="TextureButton" parent="Control" unique_id=953882076]
 layout_mode = 0
-offset_left = 34.0
-offset_top = 591.0
-offset_right = 93.0
-offset_bottom = 622.0
-text = "PAUSE"
+offset_left = 42.0
+offset_top = 563.0
+offset_right = 86.0
+offset_bottom = 607.0
+texture_normal = SubResource("CompressedTexture2D_jxero")
+texture_hover = SubResource("CompressedTexture2D_qdvrb")
+ignore_texture_size = true
+stretch_mode = 4
 
-[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/TextureButton" to="." method="_on_texture_button_pressed"]

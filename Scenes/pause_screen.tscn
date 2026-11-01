@@ -1,17 +1,19 @@
 [gd_scene format=3 uid="uid://chirq7ogkybgr"]
 
 [ext_resource type="Script" uid="uid://d0sljnnnao7l2" path="res://Scripts/pause_screen.gd" id="1_xub4q"]
+[ext_resource type="Texture2D" uid="uid://l11dp5r4cdl5" path="res://UI/UI ART/paused.svg" id="2_kt4h4"]
+[ext_resource type="Texture2D" uid="uid://6hmhoq1q43a5" path="res://UI/buttons/reset.svg" id="3_8nwfw"]
+[ext_resource type="Texture2D" uid="uid://cq3aomyj4ysdi" path="res://UI/buttons/reset haver.svg" id="4_8etnn"]
+[ext_resource type="Texture2D" uid="uid://cop2m0al1e6g" path="res://UI/buttons/back to menu.svg" id="5_f3lb5"]
+[ext_resource type="Texture2D" uid="uid://yljfuelfm3k5" path="res://UI/buttons/back to menu haver.svg" id="6_cverb"]
+[ext_resource type="Texture2D" uid="uid://cwyt58pus2ne7" path="res://UI/buttons/resume.svg" id="7_kt4h4"]
+[ext_resource type="Texture2D" uid="uid://di5b2e0iu017k" path="res://UI/buttons/resume haver.svg" id="8_8ca7t"]
 
 [node name="pause_screen" type="CanvasLayer" unique_id=1046737756]
 process_mode = 3
 script = ExtResource("1_xub4q")
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1285884182]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+metadata/_edit_vertical_guides_ = [-144.0, -456.0]
+metadata/_edit_horizontal_guides_ = [8.0, -192.0]
 
 [node name="Control" type="Control" parent="." unique_id=805950470]
 process_mode = 3
@@ -22,33 +24,79 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="Control" unique_id=100133756]
-process_mode = 3
-layout_mode = 0
-offset_left = 602.0
-offset_top = 229.0
-offset_right = 667.0
-offset_bottom = 260.0
-text = "Restart"
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=1285884182]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5)
+metadata/_edit_group_ = true
 
-[node name="Button2" type="Button" parent="Control" unique_id=70909303]
-process_mode = 3
-layout_mode = 0
-offset_left = 589.0
-offset_top = 302.0
-offset_right = 693.0
-offset_bottom = 333.0
-text = "MAIN MENU"
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=583648932]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -268.0
+offset_top = -179.0
+offset_right = 271.0
+offset_bottom = -102.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_kt4h4")
 
-[node name="Button3" type="Button" parent="Control" unique_id=1173826883]
-process_mode = 3
-layout_mode = 0
-offset_left = 586.0
-offset_top = 180.0
-offset_right = 690.0
-offset_bottom = 211.0
-text = "RESUME"
+[node name="TextureButton" type="TextureButton" parent="Control" unique_id=714993704]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -152.0
+offset_top = 66.0
+offset_right = 152.0
+offset_bottom = 138.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_8nwfw")
+texture_hover = ExtResource("4_8etnn")
 
-[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Control/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="Control/Button3" to="." method="_on_button_3_pressed"]
+[node name="TextureButton2" type="TextureButton" parent="Control" unique_id=1369453094]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -184.5
+offset_top = 166.0
+offset_right = 184.5
+offset_bottom = 238.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("5_f3lb5")
+texture_hover = ExtResource("6_cverb")
+
+[node name="TextureButton3" type="TextureButton" parent="Control" unique_id=1165940197]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -152.0
+offset_top = -36.0
+offset_right = 152.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("7_kt4h4")
+texture_hover = ExtResource("8_8ca7t")
+
+[connection signal="pressed" from="Control/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Control/TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="Control/TextureButton3" to="." method="_on_texture_button_3_pressed"]

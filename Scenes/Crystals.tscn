@@ -3,9 +3,14 @@
 [ext_resource type="Script" uid="uid://copj37jj76467" path="res://Scripts/crystals.gd" id="1_m0csg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y1q5r"]
-albedo_color = Color(0.90588236, 0.3372549, 0.3647059, 1)
+transparency = 1
+blend_mode = 4
+albedo_color = Color(0, 0, 0, 0.5)
 metallic = 1.0
 roughness = 0.2
+emission_enabled = true
+emission = Color(0, 0.39322758, 0.9018428, 1)
+emission_energy_multiplier = 7.21
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wfl7b"]
 

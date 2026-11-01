@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bbosoa0hvdjve"]
+
+[ext_resource type="Texture2D" uid="uid://cvahi0dgypt7y" path="res://UI/UI ART/cyber runner.svg" id="1_oobaa"]
+
+[node name="loading screen" type="Control" unique_id=2126483868]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1996229683]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect" unique_id=343664923]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -249.5
+offset_top = -87.0
+offset_right = 249.5
+offset_bottom = 87.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_oobaa")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=482155447]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.95800006
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -470.0
+offset_top = -34.784058
+offset_right = 470.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 0

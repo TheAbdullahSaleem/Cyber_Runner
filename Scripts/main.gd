@@ -1,9 +1,10 @@
 extends Node3D
+@onready var world_environment: WorldEnvironment = $WorldEnvironment
 var last_platform = 23
 var crystal := preload("res://Scenes/Crystals.tscn")
 var speed_powerup := preload("res://Scenes/Speed_powerup.tscn")
 var jump_powerup := preload("res://Scenes/jump_powerup.tscn")
-var platform := preload("res://Platform.tscn")
+var platform : PackedScene = preload("res://Scenes/Platform.tscn")
 var killer1 := preload("res://Scenes/killer.tscn")
 @onready var timer: Timer = $Timer
 @onready var timer_2: Timer = $Timer2
@@ -13,7 +14,6 @@ var killer1 := preload("res://Scenes/killer.tscn")
 @onready var dead_screen: CanvasLayer = $Dead
 @onready var canvas_layer: CanvasLayer = $CanvasLayer
 @onready var pause_screen: CanvasLayer = $pause_screen
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

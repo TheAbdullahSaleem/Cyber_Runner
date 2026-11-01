@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://bgl3o87mul6xx"]
+
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/Player.tscn" id="1_r150o"]
+[ext_resource type="Script" uid="uid://cynea2ebogkdg" path="res://Scripts/main.gd" id="1_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://ba4mkhe2f7lma" path="res://Scenes/ui.tscn" id="2_idj7w"]
+[ext_resource type="PackedScene" uid="uid://co0byoahjpgsl" path="res://Scenes/Dead.tscn" id="2_v1gob"]
+[ext_resource type="PackedScene" uid="uid://cugbu4w0rbbx5" path="res://Scenes/Platform.tscn" id="4_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://bbvbfgsytow76" path="res://Scenes/MENU.tscn" id="6_v1gob"]
+[ext_resource type="PackedScene" uid="uid://chirq7ogkybgr" path="res://Scenes/pause_screen.tscn" id="7_jw32o"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_rgh2o"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_pbw6q"]
+sky_material = SubResource("ProceduralSkyMaterial_rgh2o")
+
+[sub_resource type="Environment" id="Environment_v1gob"]
+background_mode = 1
+background_color = Color(0.16056186, 0.21070758, 0.25196454, 1)
+background_energy_multiplier = 3.29
+sky = SubResource("Sky_pbw6q")
+ambient_light_color = Color(0.23921569, 0.30588236, 0.36078432, 1)
+ambient_light_energy = 0.0
+glow_enabled = true
+glow_intensity = 0.22
+glow_strength = 1.88
+glow_hdr_threshold = 0.89
+glow_hdr_scale = 1.54
+glow_hdr_luminance_cap = 27.24
+fog_enabled = true
+fog_light_color = Color(0.2836572, 0.3100518, 0.34811887, 1)
+fog_light_energy = 3.0
+fog_density = 0.037
+fog_height = 478.54
+volumetric_fog_emission_energy = 148.2
+volumetric_fog_gi_inject = 1.3
+volumetric_fog_anisotropy = 0.45
+volumetric_fog_length = 42.67
+adjustment_enabled = true
+adjustment_brightness = 0.87
+adjustment_contrast = 1.065
+adjustment_saturation = 1.36
+
+[node name="Main" type="Node3D" unique_id=2099199967]
+script = ExtResource("1_rgh2o")
+
+[node name="Dead" parent="." unique_id=1046737756 node_paths=PackedStringArray("menu", "main") instance=ExtResource("2_v1gob")]
+layer = 4
+menu = NodePath("../CanvasLayer")
+main = NodePath("..")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=111177505]
+environment = SubResource("Environment_v1gob")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1930255222]
+transform = Transform3D(-0.367366, -0.6364678, -0.6781969, 0.22450669, -0.7683044, 0.5994205, -0.90257365, 0.067947134, 0.4251402, -17.144915, 4.7266827, 0)
+light_color = Color(0.7099095, 0.6424896, 0.5620477, 1)
+light_specular = 0.669
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_normal_bias = 1.656
+shadow_blur = 1.709
+
+[node name="Player" parent="." unique_id=1728798874 instance=ExtResource("1_r150o")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 0.0024642944, 1.7605493, -2.8518343)
+
+[node name="Score" parent="." unique_id=1095941771 instance=ExtResource("2_idj7w")]
+
+[node name="Timer" type="Timer" parent="." unique_id=1437148557]
+wait_time = 5.0
+autostart = true
+
+[node name="Timer2" type="Timer" parent="." unique_id=288887583]
+wait_time = 46.0
+autostart = true
+
+[node name="Timer3" type="Timer" parent="." unique_id=1493424127]
+wait_time = 57.0
+autostart = true
+
+[node name="StaticBody3D" parent="." unique_id=259303392 instance=ExtResource("4_rgh2o")]
+
+[node name="StaticBody3D2" parent="." unique_id=1348916041 instance=ExtResource("4_rgh2o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 23)
+
+[node name="Timer4" type="Timer" parent="." unique_id=102582051]
+wait_time = 2.0
+autostart = true
+
+[node name="CanvasLayer" parent="." unique_id=1560707548 instance=ExtResource("6_v1gob")]
+process_mode = 3
+
+[node name="pause_screen" parent="." unique_id=1256178661 node_paths=PackedStringArray("menu", "main") instance=ExtResource("7_jw32o")]
+menu = NodePath("../CanvasLayer")
+main = NodePath("..")

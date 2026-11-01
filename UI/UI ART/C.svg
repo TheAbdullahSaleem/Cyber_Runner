@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="44.433529mm"
+   height="18.834087mm"
+   viewBox="0 0 44.433529 18.834087"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="runer.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1"
+     inkscape:cx="86.5"
+     inkscape:cy="-469.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="44.433529"
+       height="18.834087"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter202"
+       x="-0.41013234"
+       y="-0.2679967"
+       width="1.8202647"
+       height="1.5359934">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.90209632"
+         id="feGaussianBlur202" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-142.08682,21.828127)">
+    <path
+       d="m 142.08683,-21.828125 v 18.833993 l 4.63038,9.4e-5 3.88203,-4.629657 h 29.21009 l 6.71104,-5.659432 c -0.18709,-4.583672 0,-8.544998 0,-8.544998 z"
+       style="stroke-width:0.264999"
+       id="path29"
+       sodipodi:nodetypes="cccccccc"
+       inkscape:export-filename="C.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       d="m 149.98736,-17.222149 -2.63943,-1.689483 -2.63943,1.689483 v 4.699608 l 2.63943,1.689483 2.63943,-1.689483 z"
+       style="fill:#4affff;fill-opacity:1;stroke-width:0.264998;filter:url(#filter202)"
+       id="path202" />
+    <path
+       d="m 149.98736,-17.222149 -2.63943,-1.689483 -2.63943,1.689483 v 4.699608 l 2.63943,1.689483 2.63943,-1.689483 z"
+       style="fill:#00ffff;stroke-width:0.264998"
+       id="path200" />
+    <path
+       d="m 148.97658,-16.32229 -1.62865,-1.042495 -1.62866,1.042495 v 2.899891 l 1.62866,1.042495 1.62865,-1.042495 z"
+       style="fill:#00ced1;stroke-width:0.264998"
+       id="path201" />
+  </g>
+</svg>

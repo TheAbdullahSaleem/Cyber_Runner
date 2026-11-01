@@ -4,6 +4,7 @@ var speed_powerup : bool = false
 var speed_powerup_timer := 0.0
 var player_speed : float
 var distance_covered : int = 0
+var max_distance : int = 0
 @export var boost_durtion : float = 30.0
 var jump_powerup : bool = false
 var jump_powerup_timer := 0.0
@@ -11,7 +12,7 @@ var Dead : bool = false
 var restart : bool = false
 var menu : bool = true
 var pause : bool = false
-
+var distance : int = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -19,6 +20,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func _process(delta: float) -> void:
+	if max_distance <= distance_covered:
+		max_distance = distance_covered
 	if restart == true:
 		restart1()
 func activate_speedpup():

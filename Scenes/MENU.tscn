@@ -1,6 +1,17 @@
 [gd_scene format=3 uid="uid://bbvbfgsytow76"]
 
 [ext_resource type="Script" uid="uid://ct3ofjp1w2vx" path="res://Scripts/menu.gd" id="1_vfnt7"]
+[ext_resource type="Texture2D" uid="uid://cvahi0dgypt7y" path="res://UI/UI ART/cyber runner.svg" id="2_jmjkl"]
+[ext_resource type="Texture2D" uid="uid://r88fu67ypc2y" path="res://UI/UI ART/ui.svg" id="3_2iym8"]
+[ext_resource type="Texture2D" uid="uid://ccvsfstykpwm3" path="res://UI/UI ART/max.svg" id="4_2iym8"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jmjkl"]
+load_path = "res://.godot/imported/play button.svg-a79eecf329c439fd739d29fbeabb232d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2iym8"]
+load_path = "res://.godot/imported/play button haver.svg-1a81607cb250e9e3092a533b44ac2135.ctex"
+
+[sub_resource type="FontVariation" id="FontVariation_d4a25"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1560707548]
 script = ExtResource("1_vfnt7")
@@ -11,6 +22,40 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.12591085, 0.12591085, 0.12591082, 1)
+
+[node name="logo" type="TextureRect" parent="ColorRect" unique_id=1373610553]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 460.0
+offset_top = 80.0
+offset_right = -42.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_behavior_recursive = 1
+mouse_force_pass_scroll_events = false
+texture = ExtResource("2_jmjkl")
+stretch_mode = 4
+
+[node name="TextureRect3" type="TextureRect" parent="ColorRect" unique_id=1963873854]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -347.0
+offset_top = 108.0
+offset_right = 597.0
+offset_bottom = -86.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_behavior_recursive = 1
+mouse_force_pass_scroll_events = false
+texture = ExtResource("3_2iym8")
+expand_mode = 2
+stretch_mode = 4
 
 [node name="Control" type="Control" parent="." unique_id=2067369476]
 layout_mode = 3
@@ -20,15 +65,59 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="Control" unique_id=1996086173]
-layout_mode = 0
-offset_left = 500.0
-offset_top = 258.0
-offset_right = 723.0
-offset_bottom = 365.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 72
-text = "START"
+[node name="TextureButton" type="TextureButton" parent="Control" unique_id=787154251]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 576.0
+offset_top = 392.0
+offset_right = -170.7826
+offset_bottom = -136.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("CompressedTexture2D_jmjkl")
+texture_hover = SubResource("CompressedTexture2D_2iym8")
+stretch_mode = 4
 
-[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=561569082]
+layout_mode = 0
+offset_right = 191.66197
+offset_bottom = 81.0
+texture = ExtResource("4_2iym8")
+
+[node name="Label" type="Label" parent="Control/TextureRect" unique_id=1385177618]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42880902
+anchor_top = -0.18222857
+anchor_right = 0.650729
+anchor_bottom = -0.022472775
+offset_left = 34.370598
+offset_top = 25.498457
+offset_right = 80.22212
+offset_bottom = 50.12654
+theme_override_fonts/font = SubResource("FontVariation_d4a25")
+theme_override_font_sizes/font_size = 15
+text = " 00000"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Control/TextureRect" unique_id=1357414455]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42880902
+anchor_top = 0.2102948
+anchor_right = 0.650729
+anchor_bottom = 0.37005058
+offset_left = 34.370598
+offset_top = 25.498457
+offset_right = 80.22212
+offset_bottom = 50.12654
+theme_override_fonts/font = SubResource("FontVariation_d4a25")
+theme_override_font_sizes/font_size = 15
+text = " 00000"
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Control/TextureButton" to="." method="_on_texture_button_pressed"]
