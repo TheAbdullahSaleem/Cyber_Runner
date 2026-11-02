@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1evxssam4uw1"
 path.s3tc="res://.godot/imported/plat_form_Gemini_Generated_Image_rbg3glrbg3glrbg3.png-36cba520fbbb69766e971c87b9e72e97.s3tc.ctex"
+path.etc2="res://.godot/imported/plat_form_Gemini_Generated_Image_rbg3glrbg3glrbg3.png-36cba520fbbb69766e971c87b9e72e97.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Pltform/plat_form_Gemini_Generated_Image_rbg3glrbg3glrbg3.png"
-dest_files=["res://.godot/imported/plat_form_Gemini_Generated_Image_rbg3glrbg3glrbg3.png-36cba520fbbb69766e971c87b9e72e97.s3tc.ctex"]
+dest_files=["res://.godot/imported/plat_form_Gemini_Generated_Image_rbg3glrbg3glrbg3.png-36cba520fbbb69766e971c87b9e72e97.s3tc.ctex", "res://.godot/imported/plat_form_Gemini_Generated_Image_rbg3glrbg3glrbg3.png-36cba520fbbb69766e971c87b9e72e97.etc2.ctex"]
 
 [params]
 

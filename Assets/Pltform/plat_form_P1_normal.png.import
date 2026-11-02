@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqq3nawpj4pfm"
 path.s3tc="res://.godot/imported/plat_form_P1_normal.png-498b1cfdbab986a968220e5e8f4ad1e0.s3tc.ctex"
+path.etc2="res://.godot/imported/plat_form_P1_normal.png-498b1cfdbab986a968220e5e8f4ad1e0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Pltform/plat_form_P1_normal.png"
-dest_files=["res://.godot/imported/plat_form_P1_normal.png-498b1cfdbab986a968220e5e8f4ad1e0.s3tc.ctex"]
+dest_files=["res://.godot/imported/plat_form_P1_normal.png-498b1cfdbab986a968220e5e8f4ad1e0.s3tc.ctex", "res://.godot/imported/plat_form_P1_normal.png-498b1cfdbab986a968220e5e8f4ad1e0.etc2.ctex"]
 
 [params]
 
