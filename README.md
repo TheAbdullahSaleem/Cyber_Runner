@@ -1,4 +1,4 @@
-# CUBE THE CUBE!! 
+# CYBER RUNNER!! 
 This is a simple but interesting with high graphics endless runner. play it at https://uknewme.itch.io/cyber-runner
 
 <img width="1363" height="711" alt="Screenshot 2026-11-03 000316" src="https://github.com/user-attachments/assets/7e4b4e9f-8e16-4ea3-a03f-573f4b8dcb2f" />
