@@ -31,3 +31,4 @@ func _on_texture_button_pressed() -> void:
 		Globals.pause = true
 		pause_screen.show()
 		get_tree().paused = true
+		Globals.button_sound = true

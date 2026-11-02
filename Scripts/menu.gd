@@ -21,3 +21,4 @@ func _process(delta: float) -> void:
 func _on_texture_button_pressed() -> void:
 	self.hide()
 	Globals.restart = true
+	Globals.button_sound = true

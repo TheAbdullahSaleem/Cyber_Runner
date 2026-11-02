@@ -11,15 +11,18 @@ func _process(delta: float) -> void:
 
 func _on_texture_button_pressed() -> void:
 	Globals.restart = true
+	Globals.button_sound = true
 
 
 func _on_texture_button_2_pressed() -> void:
 	main.get_tree().paused = true
 	self.hide()
 	Globals.menu = true
+	Globals.button_sound = true
 
 
 func _on_texture_button_3_pressed() -> void:
+	Globals.button_sound = true
 	Globals.pause = false
 	main.get_tree().paused = false
 	self.hide()

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dueng12ojdr17"]
+
+[ext_resource type="AudioStream" uid="uid://d04qefdx7k4gt" path="res://sounds/button.mp3" id="1_21m7o"]
+[ext_resource type="Script" uid="uid://cmbh8xxjnf64t" path="res://Scripts/soundmanager.gd" id="1_yso5k"]
+[ext_resource type="AudioStream" uid="uid://cuod37xsk4iem" path="res://sounds/crystals.mp3" id="2_yso5k"]
+[ext_resource type="AudioStream" uid="uid://bmak5dqukhf4a" path="res://sounds/amb1.mp3" id="3_qk7b1"]
+[ext_resource type="AudioStream" uid="uid://pwvwve6x4rpb" path="res://sounds/powerup.mp3" id="4_8nild"]
+[ext_resource type="AudioStream" uid="uid://lhj6fq64niit" path="res://sounds/jumping.mp3" id="5_4fu8g"]
+[ext_resource type="AudioStream" uid="uid://cjkon4xiduurw" path="res://sounds/runing.mp3" id="6_7bin8"]
+
+[node name="Soundmanager" type="Node" unique_id=1073945625]
+script = ExtResource("1_yso5k")
+
+[node name="Button" type="AudioStreamPlayer" parent="." unique_id=1173266616]
+stream = ExtResource("1_21m7o")
+max_polyphony = 3
+
+[node name="crystals" type="AudioStreamPlayer" parent="." unique_id=357805582]
+stream = ExtResource("2_yso5k")
+max_polyphony = 5
+
+[node name="idle" type="AudioStreamPlayer" parent="." unique_id=1596801194]
+process_mode = 3
+stream = ExtResource("3_qk7b1")
+parameters/looping = true
+
+[node name="powerup" type="AudioStreamPlayer" parent="." unique_id=2105570012]
+stream = ExtResource("4_8nild")
+max_polyphony = 2
+
+[node name="jumping" type="AudioStreamPlayer" parent="." unique_id=446921860]
+stream = ExtResource("5_4fu8g")
+max_polyphony = 2
+
+[node name="running" type="AudioStreamPlayer" parent="." unique_id=1174844008]
+stream = ExtResource("6_7bin8")
+parameters/looping = true

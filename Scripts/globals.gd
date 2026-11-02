@@ -13,6 +13,13 @@ var restart : bool = false
 var menu : bool = true
 var pause : bool = false
 var distance : int = 0
+var button_sound : bool = false
+var crystals_sound : bool = false
+var idle_sound : bool = false
+var powerup_sound : bool = false
+var jumping_sound : bool = false
+var running_sound : bool = false
+var on_floor : bool = true
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS

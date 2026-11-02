@@ -44,7 +44,7 @@ func spawning_crystal() -> void :
 	for i in 9:
 		var crystal_instance = crystal.instantiate()
 		add_child(crystal_instance)
-		crystal_instance.global_position = Vector3(lane,1.1,player.global_position.z+20+i)
+		crystal_instance.global_position = Vector3(lane,1.1,player.global_position.z+20+(i*1.25))
 func spawning_speedpowerup() -> void :
 	var speed_powerup_instance = speed_powerup.instantiate()
 	add_child(speed_powerup_instance)
@@ -67,6 +67,5 @@ func spawning_platform():
 		add_child(platform_instance)
 		platform_instance.global_position = Vector3(0,0,last_platform)
 func dead():
-	Globals.Dead = false
 	dead_screen.show()
 	get_tree().paused = true

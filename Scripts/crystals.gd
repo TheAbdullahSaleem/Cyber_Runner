@@ -11,5 +11,6 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node3D) -> void:
 	if body.is_in_group("player"):
+		Globals.crystals_sound = true
 		Globals.crystals += 1
 		queue_free()

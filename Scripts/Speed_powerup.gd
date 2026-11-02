@@ -16,5 +16,6 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node3D) -> void:
 	if body.is_in_group("player"):
+		Globals.powerup_sound = true
 		Globals.activate_speedpup()
 		queue_free()

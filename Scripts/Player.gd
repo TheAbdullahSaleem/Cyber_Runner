@@ -10,8 +10,8 @@ var fall_val = 0
 var blend_speed = 5
 var run_anim_speed = 1.5
 @export var speed : float = 3
-@export var jump : int = 5
-@export var boosted_jump : float = 10
+@export var jump : int = 7
+@export var boosted_jump : float = 12
 
 func handle_anim(delta):
 	match current_anim:
@@ -37,6 +37,7 @@ func update_tree():
 	anim_tree["parameters/jump/blend_amount"] = jump_val
 	anim_tree["parameters/fall/blend_amount"] = fall_val
 func _physics_process(delta: float) -> void:
+	Globals.on_floor = is_on_floor()
 	speed += 0.0001
 	run_anim_speed += 0.0001
 	Globals.distance_covered = position.z
@@ -72,6 +73,7 @@ func _physics_process(delta: float) -> void:
 
 
 	if Input.is_action_just_pressed("jump") and is_on_floor():
+		Globals.jumping_sound = true
 		if Globals.jump_powerup:
 			velocity.y = boosted_jump
 
