@@ -23,7 +23,7 @@ to make all of the assets in blender and Inkscape for svg files, designing the U
 to make the base code and the core game was make by [TheAbdullahSaleem](https://github.com/TheAbdullahSaleem)
 
 ## How to install:
-There are files for windows, mac and linux in exports folder just download them and then instal any of above
+There are files for windows, mac and linux in exports folder just download them and then instal it
 
 ## FEEDBACK:
 Your feedbacks are very valuable for us , comment on itch i read every comment and most probly reply in less then 24 hours
