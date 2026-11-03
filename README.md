@@ -16,20 +16,20 @@ This is a simple but interesting with high graphics endless runner. play it at [
 </table>
 
 ## HOW THIS WAS MADE
-This game mack in Godot and use Blender to make all of the 3d assets in it this project make with 2 peoples.
+This game make in Godot and use Blender to make all of the 3d assets in it this project, make by 2 peoples.
 
-to make all of the assets and designing and the GUI in Godot was did by [BinupaX6699](https://github.com/binupax6699)
+to make all of the assets in blender and Inkscape for svg files, designing the UI and its code and environment in Godot was did by [BinupaX6699](https://github.com/binupax6699)
 
 to make the base code and the core game was make by [TheAbdullahSaleem](https://github.com/TheAbdullahSaleem)
 
 ## How to install:
-There are files for windows mac and linux in exports folder just download them and then install any
+There are files for windows, mac and linux in exports folder just download them and then instal any of above
 
 ## FEEDBACK:
 Your feedbacks are very valuable for us , comment on itch i read every comment and most probly reply in less then 24 hours
 
 ## CONTROLS:
-You can use arrow keys or "A" , "D" , "S" , "W" , "Space" for the controls and use escape key to pause the game
+You can use arrow keys or "A" , "D" , "S" , "W" , "Space" for the controls and use "Escape" key to pause the game or use the ui buttons 
 
 ## AI DISCLOSURE
 only for learning no direct usage
