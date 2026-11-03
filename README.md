@@ -18,7 +18,7 @@ This is a simple but interesting with high graphics endless runner. play it at [
 ## HOW THIS WAS MADE
 This game mack in Godot and use Blender to make all of the 3d assets in it this project make with 2 peoples.
 
-to make all of the assets and designing and the GUI in Godot was did by [binupax6600](https://github.com/binupax6699)
+to make all of the assets and designing and the GUI in Godot was did by [BinupaX6699](https://github.com/binupax6699)
 
 to make the base code and the core game was make by [TheAbdullahSaleem](https://github.com/TheAbdullahSaleem)
 
